@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>Restaurant</servlet-name>
+		<servlet-class>entorno.RestaurantServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Restaurant</servlet-name>
+		<url-pattern>/restaurant</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Save</servlet-name>
+		<servlet-class>entorno.Save</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Save</servlet-name>
+		<url-pattern>/save</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ObtenerClientes</servlet-name>
+		<servlet-class>entorno.ObtenerClientes</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ObtenerClientes</servlet-name>
+		<url-pattern>/obtenerClientes</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>SavePlato1</servlet-name>
+		<servlet-class>entorno.SavePlato1</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SavePlato1</servlet-name>
+		<url-pattern>/savePlato1</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Savebebida</servlet-name>
+		<servlet-class>entorno.Savebebida</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Savebebida</servlet-name>
+		<url-pattern>/savebebida</url-pattern>
+	</servlet-mapping>
+	
+		
+	<servlet>
+	<servlet-name>SaveAdministrador</servlet-name>
+		<servlet-class>entorno.SaveAdministrador</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SaveAdministrador</servlet-name>
+		<url-pattern>/saveAdministrador</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>IniciarSesion</servlet-name>
+		<servlet-class>entorno.IniciarSesion</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>IniciarSesion</servlet-name>
+		<url-pattern>/iniciarSesion</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Elegir</servlet-name>
+		<servlet-class>entorno.Elegir</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Elegir</servlet-name>
+		<url-pattern>/elegir</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
